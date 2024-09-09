@@ -3,19 +3,25 @@ body {
     margin: 0;
 }
 
+h1, h2, h3 {
+    font-weight: 400;
+}
+
 h1 {
     font-size: 120px;
-    font-weight: 400;
 }
 
 h2 {
     font-size: 64px;
-    font-weight: 400;
 }
 
 h3 {
     font-size: 32px;
-    font-weight: 400;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Roboto';
 }
 
 .hero-container {
@@ -73,6 +79,10 @@ h3 {
     justify-content: space-evenly;
 }
 
+.icons img {
+    cursor: pointer;
+}
+
 .hero-text {
     text-align: center;
     color: #fff;
@@ -94,9 +104,7 @@ h3 {
 }
 
 .subheader p {
-    font-size: 18px;
     font-style: italic;
-    font-family: 'Roboto';
 }
 
 .arrow {
@@ -105,4 +113,61 @@ h3 {
     text-align: center;
     /* border: 1px solid black; */
     width: 100%;
+    cursor: pointer;
+}
+
+.section-container {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.section-h2 {
+    margin-bottom: 20px;
+}
+
+.section-p {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.section-one {
+    background-image: url(/images/explore.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33%;
+}
+
+.btn {
+    font-size: 18px;
+    font-family: 'Advent Pro';
+    background-color: #1F627D;
+    color: #fff;
+    border: none;
+    margin-top: 4%;
+    padding: 8px 16px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    cursor: pointer;
+}
+
+.section-two {
+    background-image: url(/images/kayak.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33%;
+}
+
+
+
+
+
+
+.section-three {
+    background-image: url(/images/adventure.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33%;
 }
