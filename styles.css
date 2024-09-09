@@ -55,9 +55,27 @@ h3 {
     margin-top: 1%;
 }
 
+.hero-icons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.icons {
+    position: fixed;
+    right: 0;
+    margin-right: 64px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-evenly;
+}
+
 .hero-text {
     text-align: center;
     color: #fff;
+    width: 50%;
 }
 
 .hero-text h1, h3 {
@@ -78,4 +96,12 @@ h3 {
     font-size: 18px;
     font-style: italic;
     font-family: 'Roboto';
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    /* border: 1px solid black; */
+    width: 100%;
 }
