@@ -17,13 +17,13 @@
         <nav class="nav-bar">
             <h3>Explore Alaska</h3>
             <ul>
-                <li>Home</li>
-                <li>Explore</li>
-                <li>About</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#content">Explore</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
-        <div class="hero-text-container">
+        <div class="hero-text-container" id="home">
             <div class="hero-icons">
                 <div class="hero-text">
                     <h3>Explore, Travel, Adventure</h3>
@@ -39,38 +39,57 @@
             
             <div class="subheader">
                 <h3>Explore Alaska</h3>
-                <span class="line"></span>
-                <p>Embark on a breathtaking journey:</br> Immerse yourself in the majestic beauty of Alaska</p>
-            </div>
-
-            <div class="arrow">
-                <img src="/images/arrow.png" alt="an arrow to go to the next portion of the page">
+                <div class="line"></div>
+                <p>Embark on a breathtaking journey:<br> Immerse yourself in the majestic beauty of Alaska</p>
             </div>
         </div>
     </div>
 
-    <div class="section-container">
+    <div class="section-container" id="content">
         <div class="section-one">
             <h2 class="section-h2">Explore</h2>
-            <p class="section-p">Lorem ipsum dolor sit amet consectetur. Tellus justo lectus eleifend aliquam pharetra. Leo nisl arcu id feugiat.
-                Quam commodo aliquam vel diam neque lacus eu. Sed risus volutpat adipiscing nisi iaculis.
+            <p class="section-p">Alaska’s exploration immerses you in icy beauty and vast wilderness. 
+                Glaciers and forests create endless discovery opportunities. 
+                The crisp air and wildlife enhance the experience, with each turn revealing stunning landscapes.
             </p>
             <button class="btn">Learn More</button>
         </div>
+
         <div class="section-two">
             <h2 class="section-h2">Travel</h2>
-            <p class="section-p">Lorem ipsum dolor sit amet consectetur. Tellus justo lectus eleifend aliquam pharetra. Leo nisl arcu id feugiat.
-                Quam commodo aliquam vel diam neque lacus eu. Sed risus volutpat adipiscing nisi iaculis.
+            <p class="section-p">Traveling Alaska offers dramatic scenery, from massive ice fields to rugged terrain. 
+                The refreshing air and wildlife sightings add to the adventure, with each part of the journey showcasing captivating 
+                views.
             </p>
             <button class="btn">Learn More</button>
         </div>
+
         <div class="section-three">
             <h2 class="section-h2">Adventure</h2>
-            <p class="section-p">Lorem ipsum dolor sit amet consectetur. Tellus justo lectus eleifend aliquam pharetra. Leo nisl arcu id feugiat.
-                Quam commodo aliquam vel diam neque lacus eu. Sed risus volutpat adipiscing nisi iaculis.
+            <p class="section-p">Alaska’s adventures feature breathtaking landscapes and thrilling activities. 
+                From icy terrains to wildlife encounters, each experience provides new, spectacular views, 
+                making it an exciting destination for explorers.
             </p>
             <button class="btn">Learn More</button>
         </div>
+    </div>
+
+    <div class="contact-container" id="contact">
+        <div class="form-container">
+            <h2 class="form-header">Let's get in touch!</h2>
+            <div class="form">
+                <p>Have any questions?</p>
+                <h2 class="form-h2">Contact Us</h2>
+                <form action="#">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="phone" placeholder="Phone Number">
+                    <input type="email" name="email" placeholder="Email Address">
+                    <textarea name="about" placeholder="What would you like to talk about?"></textarea>
+                    <button class="form-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="image-container"></div>
     </div>
 </body>
 </html>

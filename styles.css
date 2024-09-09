@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Advent Pro';
     margin: 0;
@@ -24,6 +28,11 @@ p {
     font-family: 'Roboto';
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .hero-container {
     background-image: url(./images/landing.jpg);
     height: 100vh;
@@ -46,7 +55,6 @@ p {
     justify-content: space-between;
     font-size: 24px;
     list-style: none;
-    /* border: 1px solid black; */
 }
 
 .nav-bar ul li:hover {
@@ -107,11 +115,16 @@ p {
     font-style: italic;
 }
 
+.line {
+    border: 2px solid #fff;
+    width: 140px;
+    margin-top: 2px;
+}
+
 .arrow {
     position: absolute;
     bottom: 0;
     text-align: center;
-    /* border: 1px solid black; */
     width: 100%;
     cursor: pointer;
 }
@@ -123,6 +136,8 @@ p {
     justify-content: space-between;
 }
 
+
+
 .section-h2 {
     margin-bottom: 20px;
 }
@@ -133,11 +148,22 @@ p {
     line-height: 1.5;
 }
 
-.section-one {
-    background-image: url(/images/explore.jpg);
+.section-one, .section-two, .section-three {
     background-size: cover;
     background-repeat: no-repeat;
     width: 33%;
+}
+
+.section-one {
+    background-image: url(/images/explore.jpg);
+}
+
+.section-two {
+    background-image: url(/images/kayak.jpg);
+}
+
+.section-three {
+    background-image: url(/images/adventure.jpg);
 }
 
 .btn {
@@ -151,23 +177,104 @@ p {
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     cursor: pointer;
+    font-weight: bold;
 }
 
-.section-two {
-    background-image: url(/images/kayak.jpg);
+.contact-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #1F627D;
+    color: #fff;
+}
+
+.form-container {
+    border: 1px solid black;
+    width: 60%;
+    text-align: center;
+    height: 100%;
+}
+
+.form-header {
+    text-align: left;
+    margin-left: 64px;
+    margin-top: 20px;
+}
+
+.form-h2 {
+    padding: 0;
+    margin: 0 0 20px 0;
+    color: #000;
+}
+
+.form-container p {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #F8F5F1;
+    border-radius: 6px;
+    border: 1px solid #F8F5F1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    background-color: #FCFCFB;
+    border: .5px solid #B6B6B6;
+    width: 70%;
+    height: 40px;
+    margin: 0 auto 10px;
+    padding-left: 10px;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+textarea {
+    background-color: #FCFCFB;
+    border: .5px solid #B6B6B6;
+    width: 70%;
+    height: 120px;
+    margin: 0 auto 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    resize: none;
+}
+
+.form-btn {
+    font-size: 18px;
+    font-family: 'Advent Pro';
+    background-color: #1F627D;
+    color: #fff;
+    border: none;
+    width: 72%;
+    margin: 0 auto 20px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.image-container {
+    background-image: url(/images/contact.jpg);
+    width: 40%;
+    height: 100%;
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 33%;
 }
 
-
-
-
-
-
-.section-three {
-    background-image: url(/images/adventure.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 33%;
-}
+/* .img-container {
+    background-image: url(/images/contact.jpg);
+    width: 50%;
+    height: 100%;
+} */
